@@ -30,9 +30,14 @@
     pmClock.MM = 40;
     pmClock.backgroundColor = [UIColor whiteColor];
     
+    TimeIconView *bigClock = [[TimeIconView alloc] initWithFrame:CGRectMake(50, 200, 210, 210)];
+    bigClock.HH = 10;
+    bigClock.MM = 30;
+    bigClock.backgroundColor = [UIColor whiteColor];
+    
     [self.view addSubview:amClock];
     [self.view addSubview:pmClock];
-    
+    [self.view addSubview:bigClock];
 }
 
 - (void)didReceiveMemoryWarning
