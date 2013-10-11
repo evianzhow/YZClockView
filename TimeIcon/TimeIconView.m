@@ -66,5 +66,11 @@
     }
 }
 
+- (void)setHH:(int)hour andMM:(int)minute
+{
+    [self setHH:hour];
+    [self setMM:minute];
+    [self setNeedsDisplay];
+}
 
 @end

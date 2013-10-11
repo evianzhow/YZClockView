@@ -11,6 +11,8 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) TimeIconView *bigClock;
+
 @end
 
 @implementation ViewController
@@ -30,20 +32,31 @@
     pmClock.MM = 40;
     pmClock.backgroundColor = [UIColor whiteColor];
     
-    TimeIconView *bigClock = [[TimeIconView alloc] initWithFrame:CGRectMake(50, 200, 210, 210)];
-    bigClock.HH = 10;
-    bigClock.MM = 30;
-    bigClock.backgroundColor = [UIColor whiteColor];
+    _bigClock = [[TimeIconView alloc] initWithFrame:CGRectMake(50, 200, 210, 210)];
+    _bigClock.HH = 10;
+    _bigClock.MM = 30;
+    _bigClock.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:amClock];
     [self.view addSubview:pmClock];
-    [self.view addSubview:bigClock];
+    [self.view addSubview:_bigClock];
+    
+    //Gesture
+    UISwipeGestureRecognizer *swipeGest = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeToChange)];
+    [self.view addGestureRecognizer:swipeGest];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)swipeToChange
+{
+    NSLog(@"Detect Swipe!\n");
+    [_bigClock setHH:4 andMM:15];
 }
 
 @end

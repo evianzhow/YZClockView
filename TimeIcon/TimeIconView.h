@@ -15,4 +15,6 @@
 
 - (void)drawInContext:(CGContextRef)context withHH:(int)hour andMM:(int)minute;
 
+- (void)setHH:(int)hour andMM:(int)minute;
+
 @end
