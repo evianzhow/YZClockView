@@ -14,15 +14,27 @@
 
 - (void)drawInContext:(CGContextRef)context withHH:(int)hour andMM:(int)minute
 {
+    CGFloat hourAngle, minuteAngle;
+    
     BOOL isAM = YES;
     if (hour < 0 || hour >= 24 || minute < 0 || minute >= 60) {
         return;
     }
-    if (hour / 12 == 1) {
+    if (hour/12 == 1) {
         isAM = NO;
     }
-    CGFloat hourAngle = (hour % 12) / 12.0 * 2 * M_PI;
-    CGFloat minuteAngle = minute / 60.0 * 2 * M_PI;
+    
+    if (hour != 12) {
+        hourAngle = (hour%12)/12.0*2*M_PI;
+    } else {
+        hourAngle = 2*M_PI;
+    }
+    if (minute != 0) {
+        minuteAngle = minute/60.0*2*M_PI;
+    } else {
+        minuteAngle = 2*M_PI;
+    }
+    
     
     //Radius
     CGFloat radius;

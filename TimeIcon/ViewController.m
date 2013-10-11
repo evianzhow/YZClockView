@@ -56,7 +56,7 @@
 - (void)swipeToChange
 {
     NSLog(@"Detect Swipe!\n");
-    [_bigClock setHH:4 andMM:15];
+    [_bigClock setHH:13 andMM:00];
 }
 
 @end
