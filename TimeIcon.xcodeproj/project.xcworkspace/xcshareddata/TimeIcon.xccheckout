@@ -10,31 +10,31 @@
 	<string>TimeIcon</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>BEF3A4BA-92FB-48E2-95BC-B14650BC713C</key>
-		<string>https://github.com/AustinChou/TimeIconView.git</string>
+		<key>0B27303D14E420FD004ECEA5442BE2B1E9F5A02E</key>
+		<string>github.com:AustinChou/TimeIconView.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TimeIcon.xcodeproj/project.xcworkspace</string>
+	<string>TimeIcon.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>BEF3A4BA-92FB-48E2-95BC-B14650BC713C</key>
+		<key>0B27303D14E420FD004ECEA5442BE2B1E9F5A02E</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/AustinChou/TimeIconView.git</string>
+	<string>github.com:AustinChou/TimeIconView.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>BEF3A4BA-92FB-48E2-95BC-B14650BC713C</string>
+	<string>0B27303D14E420FD004ECEA5442BE2B1E9F5A02E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>BEF3A4BA-92FB-48E2-95BC-B14650BC713C</string>
+			<string>0B27303D14E420FD004ECEA5442BE2B1E9F5A02E</string>
 			<key>IDESourceControlWCCName</key>
-			<string>TimeIcon</string>
+			<string>TimeIconView</string>
 		</dict>
 	</array>
 </dict>

@@ -10,11 +10,11 @@
 
 @interface TimeIconView : UIView
 
-@property (assign, nonatomic) int HH;
-@property (assign, nonatomic) int MM;
+@property (assign, nonatomic) NSUInteger HH;
+@property (assign, nonatomic) NSUInteger MM;
 
-- (void)drawInContext:(CGContextRef)context withHH:(int)hour andMM:(int)minute;
+- (void)drawInContext:(CGContextRef)context withHH:(NSUInteger)hour andMM:(NSUInteger)minute;
 
-- (void)setHH:(int)hour andMM:(int)minute;
+- (void)setHH:(NSUInteger)hour andMM:(NSUInteger)minute;
 
 @end

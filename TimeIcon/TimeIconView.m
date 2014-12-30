@@ -12,12 +12,12 @@
 
 @synthesize HH = _HH, MM = _MM;
 
-- (void)drawInContext:(CGContextRef)context withHH:(int)hour andMM:(int)minute
+- (void)drawInContext:(CGContextRef)context withHH:(NSUInteger)hour andMM:(NSUInteger)minute
 {
     CGFloat hourAngle, minuteAngle;
     
     BOOL isAM = YES;
-    if (hour < 0 || hour >= 24 || minute < 0 || minute >= 60) {
+    if (hour >= 24 || minute >= 60) {
         return;
     }
     if (hour/12 == 1) {
@@ -78,7 +78,7 @@
     }
 }
 
-- (void)setHH:(int)hour andMM:(int)minute
+- (void)setHH:(NSUInteger)hour andMM:(NSUInteger)minute
 {
     [self setHH:hour];
     [self setMM:minute];
