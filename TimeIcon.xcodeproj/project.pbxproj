@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F65BA531A52761500CC3A5A /* UIColor+TimeIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F65BA521A52761500CC3A5A /* UIColor+TimeIconView.m */; };
 		8F6753811802898A0017C335 /* TimeIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6753801802898A0017C335 /* TimeIconView.m */; };
 		8F9DF56417F83BA0005CCF7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9DF56317F83BA0005CCF7C /* Foundation.framework */; };
 		8F9DF56617F83BA0005CCF7C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9DF56517F83BA0005CCF7C /* CoreGraphics.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F65BA511A52761500CC3A5A /* UIColor+TimeIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TimeIconView.h"; sourceTree = "<group>"; };
+		8F65BA521A52761500CC3A5A /* UIColor+TimeIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TimeIconView.m"; sourceTree = "<group>"; };
 		8F67537F1802898A0017C335 /* TimeIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeIconView.h; sourceTree = "<group>"; };
 		8F6753801802898A0017C335 /* TimeIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeIconView.m; sourceTree = "<group>"; };
 		8F9DF56017F83BA0005CCF7C /* TimeIcon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeIcon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +90,8 @@
 			children = (
 				8F67537F1802898A0017C335 /* TimeIconView.h */,
 				8F6753801802898A0017C335 /* TimeIconView.m */,
+				8F65BA511A52761500CC3A5A /* UIColor+TimeIconView.h */,
+				8F65BA521A52761500CC3A5A /* UIColor+TimeIconView.m */,
 			);
 			name = TimeIconView;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 			files = (
 				8F6753811802898A0017C335 /* TimeIconView.m in Sources */,
 				8F9DF57A17F83BA0005CCF7C /* ViewController.m in Sources */,
+				8F65BA531A52761500CC3A5A /* UIColor+TimeIconView.m in Sources */,
 				8F9DF57417F83BA0005CCF7C /* AppDelegate.m in Sources */,
 				8F9DF57017F83BA0005CCF7C /* main.m in Sources */,
 			);

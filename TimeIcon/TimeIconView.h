@@ -7,14 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIColor+TimeIconView.h"
+
+#define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
 
 @interface TimeIconView : UIView
 
-@property (assign, nonatomic) NSUInteger HH;
-@property (assign, nonatomic) NSUInteger MM;
+- (instancetype)initWithFrame:(CGRect)frame
+                           HH:(NSNumber *)hour
+                           MM:(NSNumber *)minute
+                       shadow:(BOOL)hasBackgroundShadow;
+- (void)updateHH:(NSNumber *)hour MM:(NSNumber *)minute;
+- (void)stroke;
 
-- (void)drawInContext:(CGContextRef)context withHH:(NSUInteger)hour andMM:(NSUInteger)minute;
-
-- (void)setHH:(NSUInteger)hour andMM:(NSUInteger)minute;
+@property (nonatomic) NSNumber *HH;
+@property (nonatomic) NSNumber *MM;
+@property (nonatomic) NSNumber *lineWidth;
+@property (nonatomic) NSTimeInterval duration;
 
 @end
