@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "TimeIconView.h"
 
-@interface ViewController ()
+@interface ViewController () <UITextFieldDelegate>
 
 @property (nonatomic, strong) TimeIconView *bigClock;
 
@@ -21,6 +21,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    _hourText.delegate = self;
+    _minuteText.delegate = self;
     
     TimeIconView *amClock = [[TimeIconView alloc] initWithFrame:CGRectMake(50, 50, 90, 90)
                                                              HH:@7
@@ -40,10 +42,6 @@
     [self.view addSubview:amClock];
     [self.view addSubview:pmClock];
     [self.view addSubview:_bigClock];
-    
-    //Gesture
-    UITapGestureRecognizer *tapRecog = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(changeValue)];
-    [self.view addGestureRecognizer:tapRecog];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,10 +50,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)changeValue
+
+- (IBAction)changeValue:(id)sender
 {
-    NSLog(@"Detect Swipe!\n");
-    [_bigClock updateHH:@13 MM:@10];
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
+    [_bigClock updateHH:[formatter numberFromString:_hourText.text] MM:[formatter numberFromString:_minuteText.text]];
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
 @end

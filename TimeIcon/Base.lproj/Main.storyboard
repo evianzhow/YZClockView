@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,9 +17,54 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="HH" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fwb-8l-8Yi">
+                                <rect key="frame" x="32" y="430" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hN2-rs-62j"/>
+                                    <constraint firstAttribute="width" constant="97" id="yk6-r4-yV8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cow-sb-JN6">
+                                <rect key="frame" x="242" y="430" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="MV2-gB-bdj"/>
+                                    <constraint firstAttribute="height" constant="30" id="wkc-Iv-qrM"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeValue:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EjU-ah-BGE"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="euq-bK-XzS">
+                                <rect key="frame" x="137" y="430" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FN0-Hm-vBh"/>
+                                    <constraint firstAttribute="width" constant="97" id="S56-EE-dTg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cow-sb-JN6" firstAttribute="leading" secondItem="euq-bK-XzS" secondAttribute="trailing" constant="8" id="71b-lE-Rqc"/>
+                            <constraint firstItem="euq-bK-XzS" firstAttribute="leading" secondItem="fwb-8l-8Yi" secondAttribute="trailing" constant="8" id="Dvb-uf-uWa"/>
+                            <constraint firstItem="LnB-R0-AHB" firstAttribute="top" secondItem="cow-sb-JN6" secondAttribute="bottom" constant="20" id="I2B-ch-Rj8"/>
+                            <constraint firstItem="LnB-R0-AHB" firstAttribute="top" secondItem="fwb-8l-8Yi" secondAttribute="bottom" constant="20" id="MPq-aJ-hed"/>
+                            <constraint firstItem="LnB-R0-AHB" firstAttribute="top" secondItem="euq-bK-XzS" secondAttribute="bottom" constant="20" id="TEZ-If-qrC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cow-sb-JN6" secondAttribute="trailing" constant="16" id="qel-Fh-agC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7VN-CZ-j5b"/>
+                    <connections>
+                        <outlet property="hourText" destination="fwb-8l-8Yi" id="ASQ-BN-wLO"/>
+                        <outlet property="minuteText" destination="euq-bK-XzS" id="LYA-g1-XFw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

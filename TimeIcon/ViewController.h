@@ -10,4 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *hourText;
+@property (weak, nonatomic) IBOutlet UITextField *minuteText;
+- (IBAction)changeValue:(id)sender;
+
 @end
