@@ -7,6 +7,7 @@
 //
 
 #import "YZClockView.h"
+#import "UIColor+YZClockView.h"
 
 @interface YZClockView ()
 
@@ -19,9 +20,10 @@
 
 - (instancetype)initWithFrame:(CGRect)frame HH:(NSNumber *)hour MM:(NSNumber *)minute shadow:(BOOL)hasBackgroundShadow
 {
-    self = [super initWithFrame:frame];
+    self = [self initWithFrame:frame];
     
     if (self) {
+        
         _HH = hour;
         _MM = minute;
         _duration = 1.0f;
@@ -29,10 +31,10 @@
         CGFloat startAngle = -90.00f;
         CGFloat endAngle = -90.01f;
         
-        CGFloat radius = self.bounds.size.height > self.bounds.size.width ? self.bounds.size.width/2.0*0.9f : self.bounds.size.height/2.0*0.9f;
+        CGFloat radius = CGRectGetHeight(self.bounds) > CGRectGetWidth(self.bounds) ? CGRectGetWidth(self.bounds)/2.0*0.9f : CGRectGetHeight(self.bounds)/2.0*0.9f;
         _lineWidth = @(radius * 0.15f);
         
-        UIBezierPath *hourPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.bounds.size.width/2.0, self.bounds.size.height/2.0)
+        UIBezierPath *hourPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(CGRectGetWidth(self.bounds)/2.0, CGRectGetHeight(self.bounds)/2.0)
                                                                 radius:radius
                                                             startAngle:DEGREES_TO_RADIANS(startAngle)
                                                               endAngle:DEGREES_TO_RADIANS(endAngle)
@@ -44,7 +46,7 @@
         _hourArc.lineWidth     = [_lineWidth floatValue];
         _hourArc.zPosition     = 1;
         
-        UIBezierPath *minutePath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.bounds.size.width/2.0, self.bounds.size.height/2.0)
+        UIBezierPath *minutePath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(CGRectGetWidth(self.bounds)/2.0, CGRectGetHeight(self.bounds)/2.0)
                                                                   radius:radius*0.8f
                                                               startAngle:DEGREES_TO_RADIANS(startAngle)
                                                                 endAngle:DEGREES_TO_RADIANS(endAngle)

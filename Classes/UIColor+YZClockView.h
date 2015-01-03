@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIColor (TimeIconView)
+@interface UIColor (YZClockView)
 
 + (UIColor *)dayHourArcColor;
 + (UIColor *)dayMinuteArcColor;

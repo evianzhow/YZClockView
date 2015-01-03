@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Zhou Yifei. All rights reserved.
 //
 
-#import "UIColor+TimeIconView.h"
+#import "UIColor+YZClockView.h"
 
-@implementation UIColor (TimeIconView)
+@implementation UIColor (YZClockView)
 
 + (UIColor *)dayHourArcColor
 {

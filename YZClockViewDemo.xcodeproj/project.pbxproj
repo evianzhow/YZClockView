@@ -15,7 +15,7 @@
 		8F50DE031A5819CA00F4EE4F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F50DE011A5819CA00F4EE4F /* LaunchScreen.xib */; };
 		8F50DE0F1A5819CA00F4EE4F /* YZClockViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F50DE0E1A5819CA00F4EE4F /* YZClockViewDemoTests.m */; };
 		8F50DE1D1A581A7B00F4EE4F /* YZClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F50DE1A1A581A7B00F4EE4F /* YZClockView.m */; };
-		8F50DE1E1A581A7B00F4EE4F /* UIColor+TimeIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F50DE1C1A581A7B00F4EE4F /* UIColor+TimeIconView.m */; };
+		8F50DE1E1A581A7B00F4EE4F /* UIColor+YZClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F50DE1C1A581A7B00F4EE4F /* UIColor+YZClockView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +44,8 @@
 		8F50DE0E1A5819CA00F4EE4F /* YZClockViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZClockViewDemoTests.m; sourceTree = "<group>"; };
 		8F50DE191A581A7B00F4EE4F /* YZClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YZClockView.h; path = Classes/YZClockView.h; sourceTree = SOURCE_ROOT; };
 		8F50DE1A1A581A7B00F4EE4F /* YZClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YZClockView.m; path = Classes/YZClockView.m; sourceTree = SOURCE_ROOT; };
-		8F50DE1B1A581A7B00F4EE4F /* UIColor+TimeIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+TimeIconView.h"; path = "Classes/UIColor+TimeIconView.h"; sourceTree = SOURCE_ROOT; };
-		8F50DE1C1A581A7B00F4EE4F /* UIColor+TimeIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+TimeIconView.m"; path = "Classes/UIColor+TimeIconView.m"; sourceTree = SOURCE_ROOT; };
+		8F50DE1B1A581A7B00F4EE4F /* UIColor+YZClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+YZClockView.h"; path = "Classes/UIColor+YZClockView.h"; sourceTree = SOURCE_ROOT; };
+		8F50DE1C1A581A7B00F4EE4F /* UIColor+YZClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+YZClockView.m"; path = "Classes/UIColor+YZClockView.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +131,8 @@
 			children = (
 				8F50DE191A581A7B00F4EE4F /* YZClockView.h */,
 				8F50DE1A1A581A7B00F4EE4F /* YZClockView.m */,
-				8F50DE1B1A581A7B00F4EE4F /* UIColor+TimeIconView.h */,
-				8F50DE1C1A581A7B00F4EE4F /* UIColor+TimeIconView.m */,
+				8F50DE1B1A581A7B00F4EE4F /* UIColor+YZClockView.h */,
+				8F50DE1C1A581A7B00F4EE4F /* UIColor+YZClockView.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -239,7 +239,7 @@
 			files = (
 				8F50DE1D1A581A7B00F4EE4F /* YZClockView.m in Sources */,
 				8F50DDFB1A5819C900F4EE4F /* ViewController.m in Sources */,
-				8F50DE1E1A581A7B00F4EE4F /* UIColor+TimeIconView.m in Sources */,
+				8F50DE1E1A581A7B00F4EE4F /* UIColor+YZClockView.m in Sources */,
 				8F50DDF81A5819C900F4EE4F /* AppDelegate.m in Sources */,
 				8F50DDF51A5819C900F4EE4F /* main.m in Sources */,
 			);
