@@ -1,7 +1,7 @@
 # YZClockView
 
 A custom UIView which can display a time with two arc.
-<img src="../blob/master/Demo.png" alt="YZClockView Screenshot" width="640" height="1136" />
+<img src="https://github.com/AustinChou/YZClockView/raw/master/Demo.png" alt="YZClockView Screenshot" width="640" height="1136" />
 
 ## Requrements
 
