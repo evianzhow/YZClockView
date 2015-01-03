@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.social_media_url      = "http://twitter.com/austinchou0126"
   s.platform              = :ios
   s.ios.deployment_target = "6.0"
-  s.source                = { :git => "https://github.com/AustinChou/YZClockView.git" }
+  s.source                = { :git => "https://github.com/AustinChou/YZClockView.git", :tag => s.version }
   s.source_files          = "Classes/*.{h,m}"
   s.public_header_files   = "Classes/*.h"
   s.requires_arc          = true
