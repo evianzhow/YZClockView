@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="HH" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kmL-p6-mRJ">
+                                <rect key="frame" x="16" y="550" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="ame-Z6-ayv"/>
+                                    <constraint firstAttribute="height" constant="30" id="exV-A0-hGc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cct-y2-Olg">
+                                <rect key="frame" x="121" y="550" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Nh3-uO-l7m"/>
+                                    <constraint firstAttribute="width" constant="97" id="ufz-Yg-wo3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2D-qQ-xsG">
+                                <rect key="frame" x="226" y="550" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="MLN-G9-hF8"/>
+                                    <constraint firstAttribute="height" constant="30" id="Ufc-17-Jfl"/>
+                                </constraints>
+                                <state key="normal" title="Change">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeValue:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="W5f-sf-Z3Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cct-y2-Olg" firstAttribute="leading" secondItem="kmL-p6-mRJ" secondAttribute="trailing" constant="8" id="1pC-YD-dJ7"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="kmL-p6-mRJ" secondAttribute="bottom" constant="20" id="4Xx-iE-clk"/>
+                            <constraint firstItem="kmL-p6-mRJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="BYZ-vV-Amy"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="C2D-qQ-xsG" secondAttribute="bottom" constant="20" id="fwZ-kI-lq3"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cct-y2-Olg" secondAttribute="bottom" constant="20" id="gPG-wc-apS"/>
+                            <constraint firstItem="C2D-qQ-xsG" firstAttribute="leading" secondItem="cct-y2-Olg" secondAttribute="trailing" constant="8" id="pb4-ka-L22"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hourText" destination="kmL-p6-mRJ" id="5Ec-1n-Tsv"/>
+                        <outlet property="minuteText" destination="cct-y2-Olg" id="2U3-no-4LA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

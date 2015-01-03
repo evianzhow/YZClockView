@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F50DDF51A5819C900F4EE4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F50DDF41A5819C900F4EE4F /* main.m */; };
+		8F50DDF81A5819C900F4EE4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F50DDF71A5819C900F4EE4F /* AppDelegate.m */; };
+		8F50DDFB1A5819C900F4EE4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F50DDFA1A5819C900F4EE4F /* ViewController.m */; };
+		8F50DDFE1A5819CA00F4EE4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F50DDFC1A5819CA00F4EE4F /* Main.storyboard */; };
+		8F50DE001A5819CA00F4EE4F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F50DDFF1A5819CA00F4EE4F /* Images.xcassets */; };
+		8F50DE031A5819CA00F4EE4F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F50DE011A5819CA00F4EE4F /* LaunchScreen.xib */; };
+		8F50DE0F1A5819CA00F4EE4F /* YZClockViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F50DE0E1A5819CA00F4EE4F /* YZClockViewDemoTests.m */; };
+		8F50DE1D1A581A7B00F4EE4F /* YZClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F50DE1A1A581A7B00F4EE4F /* YZClockView.m */; };
+		8F50DE1E1A581A7B00F4EE4F /* UIColor+TimeIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F50DE1C1A581A7B00F4EE4F /* UIColor+TimeIconView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F50DE091A5819CA00F4EE4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F50DDE71A5819C900F4EE4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F50DDEE1A5819C900F4EE4F;
+			remoteInfo = YZClockViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F50DDEF1A5819C900F4EE4F /* YZClockViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YZClockViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F50DDF31A5819C900F4EE4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F50DDF41A5819C900F4EE4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8F50DDF61A5819C900F4EE4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8F50DDF71A5819C900F4EE4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8F50DDF91A5819C900F4EE4F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8F50DDFA1A5819C900F4EE4F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8F50DDFD1A5819CA00F4EE4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F50DDFF1A5819CA00F4EE4F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8F50DE021A5819CA00F4EE4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8F50DE081A5819CA00F4EE4F /* YZClockViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YZClockViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F50DE0D1A5819CA00F4EE4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F50DE0E1A5819CA00F4EE4F /* YZClockViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZClockViewDemoTests.m; sourceTree = "<group>"; };
+		8F50DE191A581A7B00F4EE4F /* YZClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YZClockView.h; path = Classes/YZClockView.h; sourceTree = SOURCE_ROOT; };
+		8F50DE1A1A581A7B00F4EE4F /* YZClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YZClockView.m; path = Classes/YZClockView.m; sourceTree = SOURCE_ROOT; };
+		8F50DE1B1A581A7B00F4EE4F /* UIColor+TimeIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+TimeIconView.h"; path = "Classes/UIColor+TimeIconView.h"; sourceTree = SOURCE_ROOT; };
+		8F50DE1C1A581A7B00F4EE4F /* UIColor+TimeIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+TimeIconView.m"; path = "Classes/UIColor+TimeIconView.m"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F50DDEC1A5819C900F4EE4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F50DE051A5819CA00F4EE4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F50DDE61A5819C900F4EE4F = {
+			isa = PBXGroup;
+			children = (
+				8F50DDF11A5819C900F4EE4F /* YZClockViewDemo */,
+				8F50DE0B1A5819CA00F4EE4F /* YZClockViewDemoTests */,
+				8F50DDF01A5819C900F4EE4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F50DDF01A5819C900F4EE4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F50DDEF1A5819C900F4EE4F /* YZClockViewDemo.app */,
+				8F50DE081A5819CA00F4EE4F /* YZClockViewDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F50DDF11A5819C900F4EE4F /* YZClockViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8F50DE181A581A5500F4EE4F /* Classes */,
+				8F50DDF61A5819C900F4EE4F /* AppDelegate.h */,
+				8F50DDF71A5819C900F4EE4F /* AppDelegate.m */,
+				8F50DDF91A5819C900F4EE4F /* ViewController.h */,
+				8F50DDFA1A5819C900F4EE4F /* ViewController.m */,
+				8F50DDFC1A5819CA00F4EE4F /* Main.storyboard */,
+				8F50DDFF1A5819CA00F4EE4F /* Images.xcassets */,
+				8F50DE011A5819CA00F4EE4F /* LaunchScreen.xib */,
+				8F50DDF21A5819C900F4EE4F /* Supporting Files */,
+			);
+			path = YZClockViewDemo;
+			sourceTree = "<group>";
+		};
+		8F50DDF21A5819C900F4EE4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F50DDF31A5819C900F4EE4F /* Info.plist */,
+				8F50DDF41A5819C900F4EE4F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F50DE0B1A5819CA00F4EE4F /* YZClockViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F50DE0E1A5819CA00F4EE4F /* YZClockViewDemoTests.m */,
+				8F50DE0C1A5819CA00F4EE4F /* Supporting Files */,
+			);
+			path = YZClockViewDemoTests;
+			sourceTree = "<group>";
+		};
+		8F50DE0C1A5819CA00F4EE4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F50DE0D1A5819CA00F4EE4F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F50DE181A581A5500F4EE4F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8F50DE191A581A7B00F4EE4F /* YZClockView.h */,
+				8F50DE1A1A581A7B00F4EE4F /* YZClockView.m */,
+				8F50DE1B1A581A7B00F4EE4F /* UIColor+TimeIconView.h */,
+				8F50DE1C1A581A7B00F4EE4F /* UIColor+TimeIconView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F50DDEE1A5819C900F4EE4F /* YZClockViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F50DE121A5819CA00F4EE4F /* Build configuration list for PBXNativeTarget "YZClockViewDemo" */;
+			buildPhases = (
+				8F50DDEB1A5819C900F4EE4F /* Sources */,
+				8F50DDEC1A5819C900F4EE4F /* Frameworks */,
+				8F50DDED1A5819C900F4EE4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YZClockViewDemo;
+			productName = YZClockViewDemo;
+			productReference = 8F50DDEF1A5819C900F4EE4F /* YZClockViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F50DE071A5819CA00F4EE4F /* YZClockViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F50DE151A5819CA00F4EE4F /* Build configuration list for PBXNativeTarget "YZClockViewDemoTests" */;
+			buildPhases = (
+				8F50DE041A5819CA00F4EE4F /* Sources */,
+				8F50DE051A5819CA00F4EE4F /* Frameworks */,
+				8F50DE061A5819CA00F4EE4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F50DE0A1A5819CA00F4EE4F /* PBXTargetDependency */,
+			);
+			name = YZClockViewDemoTests;
+			productName = YZClockViewDemoTests;
+			productReference = 8F50DE081A5819CA00F4EE4F /* YZClockViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F50DDE71A5819C900F4EE4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Yifei Zhou";
+				TargetAttributes = {
+					8F50DDEE1A5819C900F4EE4F = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					8F50DE071A5819CA00F4EE4F = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 8F50DDEE1A5819C900F4EE4F;
+					};
+				};
+			};
+			buildConfigurationList = 8F50DDEA1A5819C900F4EE4F /* Build configuration list for PBXProject "YZClockViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F50DDE61A5819C900F4EE4F;
+			productRefGroup = 8F50DDF01A5819C900F4EE4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F50DDEE1A5819C900F4EE4F /* YZClockViewDemo */,
+				8F50DE071A5819CA00F4EE4F /* YZClockViewDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F50DDED1A5819C900F4EE4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F50DDFE1A5819CA00F4EE4F /* Main.storyboard in Resources */,
+				8F50DE031A5819CA00F4EE4F /* LaunchScreen.xib in Resources */,
+				8F50DE001A5819CA00F4EE4F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F50DE061A5819CA00F4EE4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F50DDEB1A5819C900F4EE4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F50DE1D1A581A7B00F4EE4F /* YZClockView.m in Sources */,
+				8F50DDFB1A5819C900F4EE4F /* ViewController.m in Sources */,
+				8F50DE1E1A581A7B00F4EE4F /* UIColor+TimeIconView.m in Sources */,
+				8F50DDF81A5819C900F4EE4F /* AppDelegate.m in Sources */,
+				8F50DDF51A5819C900F4EE4F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F50DE041A5819CA00F4EE4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F50DE0F1A5819CA00F4EE4F /* YZClockViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F50DE0A1A5819CA00F4EE4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F50DDEE1A5819C900F4EE4F /* YZClockViewDemo */;
+			targetProxy = 8F50DE091A5819CA00F4EE4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8F50DDFC1A5819CA00F4EE4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F50DDFD1A5819CA00F4EE4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8F50DE011A5819CA00F4EE4F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F50DE021A5819CA00F4EE4F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F50DE101A5819CA00F4EE4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8F50DE111A5819CA00F4EE4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F50DE131A5819CA00F4EE4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YZClockViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F50DE141A5819CA00F4EE4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YZClockViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8F50DE161A5819CA00F4EE4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YZClockViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YZClockViewDemo.app/YZClockViewDemo";
+			};
+			name = Debug;
+		};
+		8F50DE171A5819CA00F4EE4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YZClockViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YZClockViewDemo.app/YZClockViewDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F50DDEA1A5819C900F4EE4F /* Build configuration list for PBXProject "YZClockViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F50DE101A5819CA00F4EE4F /* Debug */,
+				8F50DE111A5819CA00F4EE4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F50DE121A5819CA00F4EE4F /* Build configuration list for PBXNativeTarget "YZClockViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F50DE131A5819CA00F4EE4F /* Debug */,
+				8F50DE141A5819CA00F4EE4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F50DE151A5819CA00F4EE4F /* Build configuration list for PBXNativeTarget "YZClockViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F50DE161A5819CA00F4EE4F /* Debug */,
+				8F50DE171A5819CA00F4EE4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F50DDE71A5819C900F4EE4F /* Project object */;
+}
